@@ -1,0 +1,31 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-p {
+  font-size: 13px;
+  font-weight: lighter;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3rem;
+  color: hsl(228, 12%, 48%);
+}
+
+@mixin title {
+  margin-top: 19px;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 700;
+  font-family: 'Fraunces', serif;
+}
+
+@mixin bottom {
+  margin-top: 26px;
+  background-color: hsl(158, 36%, 37%);
+  width: 230px;
+  height: 48px;
+  border-radius: 10px;
+  position: relative;
+}
+

@@ -1,0 +1,95 @@
+@import "./base.scss";
+@import "./variables.scss";
+@import "./spacing.scss";
+
+.container {
+  min-width: 1440px;
+  min-height: 900px;
+  background-color: $primary-color;
+  @include flex-center;
+
+  &__card {
+    width: 600px;
+    height: 450px;
+    background-color: $white;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .image {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 450px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+  }
+
+  .container-text {
+    margin-left: 300px;
+    width: 300px;
+    height: 450px;
+    padding: 30px;
+
+    .text {
+      p {
+        @include font-p;
+      }
+    }
+
+    .title {
+      @include title;
+    }
+
+    .paragraph {
+      margin-top: 21.5px;
+      line-height: 22.1px;
+    }
+
+    .prices {
+      margin-top: 30px;
+      @include flex-center;
+
+      .item-price-1 {
+        font-family: 'Fraunces', serif;
+        font-size: 30px;
+        color: hsl(158, 36%, 37%);
+      }
+
+      .item-price-2 {
+        margin-left: 20px;
+        text-decoration: line-through;
+      }
+    }
+
+    .btn {
+      @include bottom;
+      @include flex-center;
+
+      .cart-icon {
+        margin-right: 100px;
+        position: absolute;
+
+        img {
+          margin-top: 2px;
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .text-cart {
+        padding-left: 10px;
+        font-weight: 500;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+
